@@ -225,7 +225,6 @@ body.light-mode footer {
     background-color: #e0e0e0;
 }
 
-/* Smooth transition for color changes */
 body,
 header,
 .work-item,
@@ -233,7 +232,6 @@ footer {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Adjusted styles for better visibility in light mode */
 body.light-mode h1,
 body.light-mode h2,
 body.light-mode h3 {
@@ -248,7 +246,6 @@ body.light-mode button {
     color: #ffffff;
 }
 
-/* Responsive design for the toggle button */
 @media (max-width: 768px) {
     button {
         top: 10px;
