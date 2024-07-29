@@ -1,13 +1,3 @@
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 // Loading effect
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
@@ -91,19 +81,6 @@ const createModeToggle = () => {
     });
 };
 
-// Mobile navigation toggle
-const createMobileNavToggle = () => {
-    const header = document.querySelector('header');
-    const navToggle = document.createElement('button');
-    navToggle.textContent = '☰';
-    navToggle.classList.add('nav-toggle');
-    header.prepend(navToggle);
-
-    navToggle.addEventListener('click', () => {
-        header.classList.toggle('nav-open');
-        navToggle.textContent = header.classList.contains('nav-open') ? '✕' : '☰';
-    });
-};
 
 // Initialize all functions
 const init = () => {
