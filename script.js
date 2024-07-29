@@ -1,9 +1,7 @@
-// Loading effect
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-// Scroll indicator
 const createScrollIndicator = () => {
     const scrollIndicator = document.createElement('div');
     scrollIndicator.className = 'scroll-indicator';
@@ -17,7 +15,6 @@ const createScrollIndicator = () => {
     });
 };
 
-// Section visibility
 const observeSections = () => {
     const observerOptions = {
         root: null,
@@ -38,7 +35,6 @@ const observeSections = () => {
     });
 };
 
-// Highlight active section
 const highlightActiveSection = () => {
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('nav a');
@@ -62,7 +58,6 @@ const highlightActiveSection = () => {
     });
 };
 
-// Dark/Light mode toggle
 const createModeToggle = () => {
     const toggleButton = document.createElement('button');
     toggleButton.textContent = '🌓';
@@ -82,7 +77,6 @@ const createModeToggle = () => {
 };
 
 
-// Initialize all functions
 const init = () => {
     createScrollIndicator();
     observeSections();
@@ -91,5 +85,4 @@ const init = () => {
     createMobileNavToggle();
 };
 
-// Run initialization when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', init);
